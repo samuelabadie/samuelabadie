@@ -1,0 +1,426 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    padding-bottom: 200px;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{  
+    color: black;
+    text-decoration: none;
+}
+/* ----------------------------- IMPORTS ------------------------------*/
+
+@font-face {
+    font-family: Theater;
+    src: url(/assets/font/Theater_Bold.otf);
+}
+@font-face {
+    font-family: Playfair-regular;
+    src: url(/assets/font/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: Playfair-medium;
+    src: url(/assets/font/PlayfairDisplay-Medium.ttf);
+}
+
+/* ----------------------------- LANDING ------------------------------*/
+
+
+.landing{
+    height: 100vh;
+    width: 100vw;
+}
+.landing h1{
+    font-family: Theater;
+    font-size: 160px;
+    letter-spacing: 20px; 
+}
+
+.landing-name{
+    margin-left:58vw;
+
+    display: flex;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+
+.absolute{
+    position: absolute;
+    right: 50px;
+    bottom: 3px;
+}
+
+.absolute-a{
+    position: absolute;
+    left: -200px;
+}
+
+.i-color{
+    color: #02FF95;
+}
+
+.top-page{
+    display:flex;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 10vh;
+}
+
+
+.svg-logo{
+    margin-top:30px;
+    margin-left: 30px;
+}
+
+.landing-content{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100vw;
+    height: 60vh;
+}
+
+.landing-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20vw;
+    margin-top: 18vh;
+    height: 100%;
+    font-family: Playfair-regular;
+}
+
+.landing-line-1{
+    margin-left: 50px;
+    height: 1px;
+    width: 120px;
+    background-color: rgb(215, 215, 215);
+}
+.landing-line-2{
+    margin-left: 130px;
+    height: 1px;
+    width: 120px;
+    background-color: rgb(215, 215, 215);
+}
+
+.landing-dev{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    letter-spacing: 3px;
+    margin-top: 15px;
+    padding: 3px;
+}
+
+.landing-etud{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    letter-spacing: 4px;
+}
+
+
+.landing-dev img{
+    margin-right: 10px;
+}
+
+.landing-etud img{
+    margin-right: 10px;
+}
+
+.landing-right{
+    margin-right: 10vw;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    border-left: solid black;
+    padding-left: 10px;
+}
+
+.social-link{
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.social-link-middle{
+    margin : 10px 0;
+}
+
+.work{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 3vh;
+    margin-right: 22vw;
+}
+
+.scroll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22vh; 
+}
+
+.scroll-message{
+    font-family: Playfair-regular;
+    letter-spacing: 5px;
+    margin-right: 15px;
+}
+
+.button{
+    letter-spacing: 5px;
+    font-family:Playfair-medium ;
+    color: black;
+    font-size: 20px;
+    padding: 9px;
+    background-color: #02FF95;
+    margin-right: 10px;
+    transition: transform 0.2s;
+}
+
+.button:hover{
+    transform: scale(1.02);
+}
+
+.button:active{
+    transform: scale(0.90);
+}
+
+
+/* disabled scrollbar */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* ----------------------------- PROFILE ------------------------------*/
+
+
+.profile{
+    height: 60vh;
+    width: 100vw;
+    padding-top: 15vh;
+}
+
+.presentation{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.presentation-text{
+    font-family:Playfair-regular ;
+    line-height: 30px;
+    font-size: 19px;
+    letter-spacing: 1px;
+    height: 15vh;
+    width: 40vw;
+    margin-left: 2vw;
+}
+
+.bold-text{
+    font-family: Playfair-medium;
+}
+
+.profile-cv{
+    display: flex;
+    justify-content: center;
+}
+
+.cv-button{
+    margin-left: 10vw;
+}
+
+
+
+/* ----------------------------- RESPONSIVE ------------------------------*/
+
+@media screen and (max-width: 1500px ) {
+
+    .landing-left{
+        margin-left: 10vw;
+    }
+
+    .presentation-text{
+        font-size: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 1150px ) {
+
+
+    h1{
+        font-size: 130px !important;
+    }
+
+    .landing-left{
+        margin-left: 5vw;
+    }
+
+    .presentation-text{
+        font-size: 13px;
+    }
+
+    .profile-cv{
+        margin-top: 30px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1000px ) {
+
+
+    h1{
+        font-size: 100px !important;
+    }
+
+    .landing-left{
+        font-size: 14px;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 450px ) {
+
+    .landing{
+        height: 80vh;
+    }
+
+    .landing-content{
+        height: 60%;
+    }
+
+    .top-page{
+        justify-content: center;
+    }
+
+    .svg-logo{
+        margin: 10px 0;
+        width: 40px;
+    }
+
+    .landing-name{
+        display: none;
+
+    }
+
+    .work{
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .landing-right{
+        margin: 10px 0;
+    }
+
+    .social-link-middle{
+        margin: 0 15px;
+    }
+
+    .socials{
+        border: none;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .landing-content{
+        flex-direction: column;
+    }
+
+    .landing-left{
+        margin:0 !important;
+    }
+
+    .scroll{
+        display: none;
+    }
+
+    .profile{
+        padding-top: 0;
+    }
+
+    .presentation{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentation-text{
+        width: 80vw;
+        padding: 10px 10px;
+        margin-left: 0;
+        margin-bottom: 15%;
+        margin-top: 10%;
+    }
+
+    .cv-button{
+        margin-left: 0;
+    }
+
+    .profile-cv{
+        margin-top: 45vh;
+        margin-bottom: 10vh;
+    }
+}
