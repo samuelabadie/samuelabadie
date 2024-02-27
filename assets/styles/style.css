@@ -28,10 +28,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-    padding-bottom: 200px;
-	line-height: 1;
-}
 ol, ul {
 	list-style: none;
 }
@@ -70,119 +66,35 @@ a{
 
 /* ----------------------------- LANDING ------------------------------*/
 
-
-.landing{
-    height: 100vh;
-    width: 100vw;
-}
-.landing h1{
-    font-family: Theater;
-    font-size: 160px;
-    letter-spacing: 20px; 
+body{
+    background-color: #F5F5F5;
+    overflow-x: hidden;
 }
 
-.landing-name{
-    margin-left:58vw;
-
-    display: flex;
-    position: absolute;
-    width: 10px;
-    height: 10px;
-}
-
-.absolute{
-    position: absolute;
-    right: 50px;
-    bottom: 3px;
-}
-
-.absolute-a{
-    position: absolute;
-    left: -200px;
-}
-
-.i-color{
-    color: #02FF95;
-}
-
-.top-page{
-    display:flex;
-    justify-content: flex-start;
-    width: 100vw;
-    height: 10vh;
-}
-
-
-.svg-logo{
-    margin-top:30px;
-    margin-left: 30px;
-}
-
-.landing-content{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    width: 100vw;
-    height: 60vh;
-}
-
-.landing-left{
+.left{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 20vw;
-    margin-top: 18vh;
-    height: 100%;
-    font-family: Playfair-regular;
-}
-
-.landing-line-1{
-    margin-left: 50px;
-    height: 1px;
-    width: 120px;
-    background-color: rgb(215, 215, 215);
-}
-.landing-line-2{
-    margin-left: 130px;
-    height: 1px;
-    width: 120px;
-    background-color: rgb(215, 215, 215);
-}
-
-.landing-dev{
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    letter-spacing: 3px;
-    margin-top: 15px;
-    padding: 3px;
+    height: 100vh;
+    width: 30vw;
+    background-color: #c3c3c3;
+
 }
 
-.landing-etud{
+.links{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
     align-items: center;
-    letter-spacing: 4px;
-}
 
-
-.landing-dev img{
-    margin-right: 10px;
-}
-
-.landing-etud img{
-    margin-right: 10px;
-}
-
-.landing-right{
-    margin-right: 10vw;
 }
 
 .socials {
     display: flex;
-    flex-direction: column;
-    border-left: solid black;
-    padding-left: 10px;
+    flex-direction: row;
+    align-items: center;    
 }
 
 .social-link{
@@ -193,38 +105,12 @@ a{
     transform: scale(1.1);
 }
 
-.social-link-middle{
-    margin : 10px 0;
-}
-
-.work{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 3vh;
-    margin-right: 22vw;
-}
-
-.scroll{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 22vh; 
-}
-
-.scroll-message{
-    font-family: Playfair-regular;
-    letter-spacing: 5px;
-    margin-right: 15px;
-}
-
 .button{
     letter-spacing: 5px;
-    font-family:Playfair-medium ;
-    color: black;
+    color: white;
     font-size: 20px;
     padding: 9px;
-    background-color: #02FF95;
+    background-color: black;
     margin-right: 10px;
     transition: transform 0.2s;
 }
@@ -243,46 +129,6 @@ a{
 ::-webkit-scrollbar {
     display: none;
 }
-
-/* ----------------------------- PROFILE ------------------------------*/
-
-
-.profile{
-    height: 60vh;
-    width: 100vw;
-    padding-top: 15vh;
-}
-
-.presentation{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    
-}
-
-.presentation-text{
-    font-family:Playfair-regular ;
-    line-height: 30px;
-    font-size: 19px;
-    letter-spacing: 1px;
-    height: 15vh;
-    width: 40vw;
-    margin-left: 2vw;
-}
-
-.bold-text{
-    font-family: Playfair-medium;
-}
-
-.profile-cv{
-    display: flex;
-    justify-content: center;
-}
-
-.cv-button{
-    margin-left: 6px;
-}
-
 
 
 /* ----------------------------- RESPONSIVE ------------------------------*/
@@ -378,6 +224,7 @@ a{
     }
 
     .socials{
+        display: flex;
         border: none;
         flex-direction: row;
         align-items: center;
